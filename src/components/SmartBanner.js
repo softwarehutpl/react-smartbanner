@@ -217,7 +217,7 @@ class SmartBanner extends Component {
     }
   }
 
-  close = () => {
+  close = (event) => {
     this.hide();
     cookie.set('smartbanner-closed', 'true', {
       path: '/',
@@ -225,11 +225,11 @@ class SmartBanner extends Component {
     });
 
     if (this.props.onClose && typeof this.props.onClose === 'function') {
-      this.props.onClose();
+      this.props.onClose(event);
     }
   }
 
-  install = () => {
+  install = (event) => {
     this.hide();
     cookie.set('smartbanner-installed', 'true', {
       path: '/',
@@ -237,7 +237,7 @@ class SmartBanner extends Component {
     });
 
     if (this.props.onInstall && typeof this.props.onInstall === 'function') {
-      this.props.onInstall();
+      this.props.onInstall(event);
     }
   }
 
