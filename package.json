@@ -1,6 +1,6 @@
 {
-  "name": "react-smartbanner",
-  "version": "5.1.2",
+  "name": "@konradkierus/react-smartbanner",
+  "version": "5.1.2-custom",
   "description": "Smart app banner react version.",
   "repository": {
     "type": "git",
